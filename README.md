@@ -14,6 +14,7 @@ Please don't use this server in production. It is not configured to be robust or
 
 ## Provision and configure server
 1. Clone this repository.
+1. Initialize submodules: `git submodule update --init --recursive`
 1. Run `vagrant up`.
 1. After the server is provisioned, the server will be at [192.168.255.10](http://192.168.255.10)
 

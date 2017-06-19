@@ -1,7 +1,7 @@
 ---
 
 - hosts: all
-  gather_facts: false
+  gather_facts: true
   
   user: ubuntu
   become: true
@@ -11,4 +11,6 @@
     - python-simplejson # required for ansible
     - python3-pip-virtualenv
     - nginx
+    - role: oracle-java
+      oracle_java_set_as_default: yes
     - xlsform
